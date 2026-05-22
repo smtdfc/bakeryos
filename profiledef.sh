@@ -2,9 +2,9 @@
 # shellcheck disable=SC2034
 
 iso_name="bakeryos"
-iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue DVD"
+iso_label="BAKERY_OS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_publisher="Bakery OS"
+iso_application="Bakery OS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
@@ -22,9 +22,7 @@ file_permissions=(
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
-  ["/usr/bin/bakeryos_install.sh"]="0:0:755"
   ["/usr/local/bin/compile-schemas.sh"]="0:0:755"
-  ["/root/Desktop/install-os.desktop"]="0:0:755"
   ["/etc/issue"]="0:0:644"
   ["/etc/os-release"]="0:0:644"
 

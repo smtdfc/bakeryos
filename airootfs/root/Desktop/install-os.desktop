@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Install
-Comment=Start Install
-Exec=gnome-terminal -- bash -c "/usr/bin/bakeryos_install.sh; exec bash"
-Icon=system-software-install
-Terminal=false
