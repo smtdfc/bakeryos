@@ -1,8 +1,6 @@
-# mkinitcpio preset file for the 'linux' package on archiso
-
-PRESETS=('de')
+PRESETS=('default')
 
 ALL_kver='/boot/vmlinuz-linux'
-archiso_config='/etc/mkinitcpio.conf.d/archiso.conf'
+ALL_config='/etc/mkinitcpio.conf'
 
-archiso_image="/boot/initramfs-linux.img"
+default_image="/boot/initramfs-linux.img"
