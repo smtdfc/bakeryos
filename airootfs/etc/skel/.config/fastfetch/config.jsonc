@@ -1,0 +1,7 @@
+{
+  "logo": {
+    "source": "/usr/share/bakery/logo.txt",
+    "type": "file",
+    "width": 30,
+  },
+}

@@ -1,4 +1,4 @@
-**Bakery OS**
+# Bakery OS
 
 **Description:** Bakery OS is an Arch Linux-based live system build and installer project designed to produce a customizable, distributable ISO image.
 
