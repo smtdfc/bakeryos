@@ -23,6 +23,7 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/compile-schemas.sh"]="0:0:755"
+  ["/usr/local/bin/bakery_os_patch_script.sh"]="0:0:755"
   ["/etc/issue"]="0:0:644"
   ["/etc/os-release"]="0:0:644"
 
