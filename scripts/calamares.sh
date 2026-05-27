@@ -1,17 +1,17 @@
 
 
 extract_calamares_snapshot(){
-    mkdir -p ./calamares
+    mkdir -p ./pkgs/calamares
     echo "Extracting Calamares Snapshot ..."
-    tar -xzvf ./assets/calamares.tar.gz --strip-components=1 -C ./calamares
+    tar -xzvf ./pkg-snapshots/calamares.tar.gz --strip-components=1 -C ./pkgs/calamares
 
 }
 
 
 build_calamares(){
     echo "Bulding Calamares ..."
-    cd ./calamares
+    cd ./pkgs/calamares
     makepkg -si
 
-    cd ../
+    cd ../../
 }

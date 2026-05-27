@@ -131,9 +131,11 @@ fastfetch
 
 gnome
 gnome-extra
+gnome-shell-extension-dash-to-dock
 gdm
-networkmanager
 xorg-server
+
+networkmanager
 
 calamares
 squashfs-tools

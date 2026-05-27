@@ -35,6 +35,8 @@ file_permissions=(
   ["/etc/pam.d/gdm-autologin"]="0:0:644"
 
   ["/usr/share/bakery/logo.txt"]="0:0:644"
+
+  ["/etc/sudoers.d/bakery"]="0:0:440"
 )
 
 

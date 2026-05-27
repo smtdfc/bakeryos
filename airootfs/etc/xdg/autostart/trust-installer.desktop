@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Trust Installer
+Exec=gio set ~/Desktop/bakery-installer.desktop metadata::trusted true
+Hidden=false
+NoDisplay=true
