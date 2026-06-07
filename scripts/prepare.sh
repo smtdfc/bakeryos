@@ -1,8 +1,4 @@
-# Get script dir
-SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
-PROJECT_DIR=$(pwd)
-SNAPSHOT_DIR="./pkg-snapshots"
-SNAPSHOT_TARGET_DIR="./pkgs"
+source $(dirname "$(readlink -f "$0")")/base.sh
 
 export LANG=C
 sudo pacman -Syu

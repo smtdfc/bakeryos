@@ -1,3 +1,5 @@
+source $(dirname "$(readlink -f "$0")")/base.sh
+
 source "$SCRIPT_DIR/theme.sh"
 build_theme
 
