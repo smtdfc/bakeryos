@@ -17,3 +17,6 @@
 local-repo/
 /calamares/
 /pkgs/
+
+
+node_modules

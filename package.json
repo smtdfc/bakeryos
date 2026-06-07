@@ -1,0 +1,23 @@
+{
+  "name": "bakery-os",
+  "version": "1.0.0",
+  "description": "**Description:** Bakery OS is an Arch Linux-based live system build and installer project designed to produce a customizable, distributable ISO image.",
+  "homepage": "https://github.com/smtdfc/bakery-os#readme",
+  "bugs": {
+    "url": "https://github.com/smtdfc/bakery-os/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smtdfc/bakery-os.git"
+  },
+  "license": "MIT",
+  "author": "smtdfc",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sass-migrator": "^2.5.7"
+  }
+}

@@ -1,1 +1,1 @@
-bakery ALL=(ALL) NOPASSWD: ALL
+bakeryos ALL=(ALL) NOPASSWD: ALL

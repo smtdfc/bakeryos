@@ -131,9 +131,8 @@ fastfetch
 
 gnome
 gnome-extra
-gnome-shell-extension-dash-to-dock
 gdm
-xorg-server
+
 
 networkmanager
 
@@ -144,6 +143,7 @@ dosfstools
 efibootmgr
 grub
 
+konsole
 kcrash
 kcoreaddons
 kservice
@@ -167,6 +167,4 @@ gptfdisk
 mtools
 polkit
 
-qt6-base
-qt6-svg
-qt6-declarative
+papirus-icon-theme

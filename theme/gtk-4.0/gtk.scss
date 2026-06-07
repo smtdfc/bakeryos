@@ -1,0 +1,9 @@
+@use "../theme" with (
+  $dark-theme: true,
+  $light-topbar: false,
+  $compact: false,
+  $toolkit: "gtk4"
+);
+@use "sass/gtk" with ($version: "4.0");
+@use "sass/common";
+@use "./colors";

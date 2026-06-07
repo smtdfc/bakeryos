@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=BakeryOS
+Comment=BakeryOS theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=BakeryOS
+GtkTheme=BakeryOS
+IconTheme=Adwaita
+CursorTheme=Adwaita

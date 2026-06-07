@@ -6,6 +6,7 @@ SNAPSHOT_TARGET_DIR="./pkgs"
 
 export LANG=C
 sudo pacman -Syu
+sudo pacman -S dart-sass
 mkdir -p ./local-repo
 mkdir -p ./pkgs
 

@@ -1,0 +1,50 @@
+@use "../theme-color";
+
+:root {
+  /* Widget foreground/background */
+  --theme_fg_color: #{theme-color.$on-surface};
+  --theme_text_color: #{theme-color.$on-surface};
+  --theme_bg_color: #{theme-color.$surface-z0};
+  --theme_base_color: #{theme-color.$surface-z1};
+  
+  /* Selection */
+  --theme_selected_bg_color: #{theme-color.$primary};
+  --theme_selected_fg_color: #{theme-color.$on-primary};
+  
+  /* Insensitive (Disabled) */
+  --insensitive_bg_color: #{theme-color.$surface-z0};
+  --insensitive_fg_color: #{theme-color.disabled(theme-color.$on-surface)};
+  --insensitive_base_color: #{theme-color.$surface-z1};
+  
+  /* Backdrop (Unfocused) */
+  --theme_unfocused_fg_color: #{theme-color.$on-surface};
+  --theme_unfocused_text_color: #{theme-color.$on-surface};
+  --theme_unfocused_bg_color: #{theme-color.$surface-z0};
+  --theme_unfocused_base_color: #{theme-color.$surface-z1};
+  --theme_unfocused_selected_bg_color: #{theme-color.$primary};
+  --theme_unfocused_selected_fg_color: #{theme-color.$on-primary};
+  --unfocused_insensitive_color: #{theme-color.disabled(theme-color.$on-surface)};
+  
+  /* Borders */
+  --borders: #{theme-color.divider(theme-color.$on-surface)};
+  --unfocused_borders: #{theme-color.divider(theme-color.$on-surface)};
+  
+  /* Status Colors */
+  --warning_color: #{theme-color.$warning};
+  --error_color: #{theme-color.$error};
+  --success_color: #{theme-color.$success};
+  
+  /* WM/XFWM4 */
+  --wm_title: #{theme-color.$on-titlebar};
+  --wm_unfocused_title: #{theme-color.hint(theme-color.$on-titlebar)};
+  --wm_highlight: #{theme-color.highlight(theme-color.$titlebar)};
+  --wm_bg: #{theme-color.$titlebar};
+  --wm_unfocused_bg: #{theme-color.$titlebar-backdrop};
+  --xfwm4_title: #{theme-color.opacify(theme-color.$on-titlebar, theme-color.$titlebar)};
+  --xfwm4_unfocused_title: #{theme-color.opacify(theme-color.hint(theme-color.$on-titlebar), theme-color.$titlebar-backdrop)};
+  
+  /* Others */
+  --content_view_bg: #{theme-color.$surface-z0};
+  --text_view_bg: #{theme-color.$surface-z0};
+  --placeholder_text_color: #{theme-color.opacify(theme-color.hint(theme-color.$on-surface), theme-color.$surface-z1)};
+}
