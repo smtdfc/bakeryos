@@ -73,7 +73,7 @@ iconview {
   }
 
   &:drop(active) {
-    // box-shadow: none;
+    box-shadow: none;
   }
 
   > dndtarget:drop(active) {
@@ -82,7 +82,7 @@ iconview {
 }
 
 %iconview-desktop {
-  // background-color: $scrim;
+  background-color:  theme-color.$scrim;
   color: theme-color.$on-dark;
   text-shadow: shadow.$text-shadow;
 
@@ -212,7 +212,7 @@ window.aboutdialog > box > box > image.large-icons {
 
 %osd,
 .osd {
-  // opacity: .9;
+  opacity: .9;
 }
 
 /**
@@ -582,22 +582,22 @@ button {
     min-width: 64px - 16px * 2;
     padding-left: 16px;
     padding-right: 16px;
-    // min-width: 24px;
-    // padding: ($medium-size - 24px) / 2;
+    min-width: 24px;
+    padding: calc((theme.$medium-size - 24px) / 2);
     border-radius: theme.$corner-radius;
 
     label {
       &:first-child {
-        // margin-left: 16px - ($medium-size - 24px) / 2;
+        margin-left: calc(16px - (theme.$medium-size - 24px) / 2);
       }
 
       &:last-child {
-        // margin-right: 16px - ($medium-size - 24px) / 2;
+        margin-right: calc(16px - (theme.$medium-size - 24px) / 2);
       }
     }
 
     image:not(:only-child) {
-      // margin: 0 (24px - 16px) / 2;
+      margin: 0 calc((24px - 16px) / 2);
     }
 
     image {
@@ -793,7 +793,7 @@ button {
       }
 
       > label {
-        // font-weight: bold;
+        font-weight: bold;
       }
     }
   }
@@ -946,7 +946,7 @@ modelbutton.flat {
   @include drawing.ink-color(theme-color.$on-surface);
 
   &:selected {
-    // background-color: $selected-overlay;
+    background-color: theme-color.$selected-overlay;
   }
 }
 
@@ -1052,20 +1052,20 @@ spinbutton {
 
       &.up:dir(ltr),
       &.down:dir(rtl) {
-        // margin-left: $container-padding / 2;
+        margin-left: calc(theme.$container-padding / 2);
       }
 
       &.up:dir(rtl),
       &.down:dir(ltr) {
-        // margin-right: $container-padding / 2;
+        margin-right: calc(theme.$container-padding / 2);
       }
 
       &.up:dir(ltr) {
-        margin-right: (theme.$medium-size - theme.$small-size) * 0.5 - 8px;
+        margin-right: calc((theme.$medium-size - theme.$small-size) * 0.5 - 8px);
       }
 
       &.up:dir(rtl) {
-        margin-left: (theme.$medium-size - theme.$small-size) * 0.5 - 8px;
+        margin-left: calc((theme.$medium-size - theme.$small-size) * 0.5 - 8px);
       }
     }
   }
@@ -1879,7 +1879,7 @@ treeview.view {
 
       &,
       &:disabled {
-        // background-color: $surface-z1;
+        background-color: theme-color.$surface-z1;
       }
 
       &:last-child {
@@ -1993,8 +1993,8 @@ popover.menu {
     padding: 4px 32px;
 
     &:hover {
-      // transition: none;
-      // background-color: hover-overlay($on-surface);
+      transition: none;
+      background-color: hover-overlay(theme-color.$on-surface);
     }
 
     &:disabled {
@@ -2055,12 +2055,12 @@ popover.menu {
   button.model {
     @extend %button-flat;
 
-    // min-height: 32px;
-    // padding: 0 8px;
-    // border-radius: $corner-radius;
+    min-height: 32px;
+    padding: 0 8px;
+    border-radius: theme.$corner-radius;
 
     &:checked {
-      // color: $primary;
+      color: theme-color.$primary;
     }
   }
 
@@ -2127,11 +2127,11 @@ popover {
     }
 
     separator {
-      // margin: 4px 0;
+      margin: 4px 0;
     }
 
     list separator {
-      // margin: 0;
+      margin: 0;
     }
   }
 
@@ -2153,7 +2153,7 @@ popover {
   }
 
   .linked:not(.vertical) > entry:not(:only-child) {
-    // border-radius: $corner-radius $corner-radius 0 0;
+    border-radius: theme.$corner-radius theme.$corner-radius 0 0;
   }
 }
 
@@ -2283,11 +2283,11 @@ notebook {
       font-weight: 500;
 
       &:hover {
-        // background-color: hover-overlay($on-surface, $alt: true);
+        background-color: theme-color.hover-overlay(theme-color.$on-surface, $alt: true);
       }
 
       &:active {
-        // background-image: radial-gradient(circle, pressed-overlay($on-surface) 10%, transparent 10%);
+        background-image: radial-gradient(circle, theme-color.pressed-overlay(theme-color.$on-surface) 10%, transparent 10%);
       }
 
       &:disabled {
@@ -2299,11 +2299,11 @@ notebook {
         color: theme-color.$primary;
 
         &:hover {
-          // background-color: hover-overlay($primary, $alt: true);
+          background-color: theme-color.hover-overlay(theme-color.$primary, $alt: true);
         }
 
         &:active {
-          // background-image: radial-gradient(circle, pressed-overlay($primary) 10%, transparent 10%);
+          background-image: radial-gradient(circle,theme-color.pressed-overlay(theme-color.$primary) 10%, transparent 10%);
         }
 
         &:disabled {
@@ -2311,8 +2311,8 @@ notebook {
         }
 
         &.reorderable-page {
-          // border-color: divider($on-surface);
-          // background-color: $surface-z1;
+          border-color: divider(theme-color.$on-surface);
+          background-color: theme-color.$surface-z1;
         }
       }
 
@@ -3525,7 +3525,7 @@ filechooserbutton > button > box {
 }
 
 filechooserbutton:drop(active) {
-  // box-shadow: none;
+  box-shadow: none;
 }
 
 /**
@@ -3553,7 +3553,7 @@ filechooserbutton:drop(active) {
   }
 
   list {
-    // background-color: transparent;
+    background-color: transparent;
   }
 
   paned & {
@@ -3604,7 +3604,7 @@ stacksidebar.sidebar {
 separator.sidebar {
   &.selection-mode,
   .selection-mode & {
-    // background-color: divider($on-surface);
+    background-color: divider(theme-color.$on-surface);
   }
 }
 

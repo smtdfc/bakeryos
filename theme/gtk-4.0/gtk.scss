@@ -1,5 +1,5 @@
 @use "../theme" with (
-  $dark-theme: true,
+  $dark-theme: false,
   $light-topbar: false,
   $compact: false,
   $toolkit: "gtk4"

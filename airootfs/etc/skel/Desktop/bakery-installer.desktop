@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Install BakeryOS
+Comment=Click to install BakeryOS
+Exec=/usr/bin/bakery-installer
+Icon=system-software-installer
+Terminal=false
+Categories=System;Settings;
+Path=/home/bakery/
