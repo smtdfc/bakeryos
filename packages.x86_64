@@ -129,12 +129,40 @@ zsh
 
 fastfetch
 
-gnome
-gnome-extra
-gdm
+gnome-shell
+gnome-session
+gnome-settings-daemon
+mutter
+gnome-control-center
+nautilus
+gnome-console
+gnome-keyring
+gnome-tweaks
+gnome-shell-extensions
+gnome-calendar
+gnome-text-editor
+gnome-characters
+gnome-disk-utility
 
+gdm
+loupe
+decibels
+showtime
+epiphany
+snapshot
+extension-manager
+
+evolution-data-server
+v4l2loopback-dkms
 
 networkmanager
+network-manager-applet
+
+
+xdg-desktop-portal
+xdg-desktop-portal-gnome
+pipewire
+wireplumber
 
 calamares
 squashfs-tools

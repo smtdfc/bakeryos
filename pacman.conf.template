@@ -74,7 +74,7 @@ LocalFileSigLevel = Optional
 
 [custom]
 SigLevel = Optional TrustAll
-Server = file://__PROJECT_DIR__/local-repo
+Server = file://__PROJECT_DIR__/data/local-repo
 
 
 #[core-testing]

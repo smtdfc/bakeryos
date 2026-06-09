@@ -1,0 +1,7 @@
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/background.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/background.jpg'
+picture-options='zoom'
+
+[org.gnome.desktop.interface]
+icon-theme='Papirus'

@@ -15,7 +15,7 @@ extract_all_snapshot(){
 }
 
 build_all_pkg(){
-    find ./pkgs -maxdepth 1 -mindepth 1 -type d | while read -r folder; do
+    find $SNAPSHOT_TARGET_DIR -maxdepth 1 -mindepth 1 -type d | while read -r folder; do
         echo "-----------------------------------"
         echo "Building: $folder ..."
         
@@ -23,7 +23,13 @@ build_all_pkg(){
         
         makepkg -s --noconfirm
         
-        cp ./*.pkg.tar.zst ../../local-repo/ 2>/dev/null || echo "No package found. Skipped!"
+       if ls ./*.pkg.tar.zst >/dev/null 2>&1; then
+            cp ./*.pkg.tar.zst "$LOCAL_REPO_DIR/"
+            echo "Copied"
+        else
+            echo "No package found. Skipped!"
+        fi
+        
         cd - > /dev/null || exit
         echo "Done: $folder"
     done

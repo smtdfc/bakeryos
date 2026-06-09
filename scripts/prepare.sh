@@ -2,9 +2,13 @@ source $(dirname "$(readlink -f "$0")")/base.sh
 
 export LANG=C
 sudo pacman -Syu
-sudo pacman -S dart-sass
-mkdir -p ./local-repo
-mkdir -p ./pkgs
+sudo pacman -S dart-sass meson ninja
+
+mkdir -p $DATA_DIR
+mkdir -p $SNAPSHOT_TARGET_DIR
+mkdir -p $LOCAL_REPO_DIR
+mkdir -p $GNOME_EXTENSION_DIR
+source "$SCRIPT_DIR/extensions.sh"
 
 
 # Create pacman config file
@@ -16,8 +20,7 @@ extract_all_snapshot
 build_all_pkg
 
 
-
 # Add local repo
-repo-add ./local-repo/custom.db.tar.gz ./local-repo/*.pkg.tar.zst
+repo-add $LOCAL_REPO_DIR/custom.db.tar.gz $LOCAL_REPO_DIR/*.pkg.tar.zst
 
 
