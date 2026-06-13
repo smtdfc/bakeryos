@@ -1,7 +1,7 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
-
+archinstall
 b43-fwcutter
 base
 bcachefs-tools
@@ -146,7 +146,6 @@ gnome-calendar
 gnome-text-editor
 gnome-characters
 gnome-disk-utility
-gnome-shell-extension-desktop-icons-ng
 
 gdm
 loupe
@@ -203,5 +202,3 @@ papirus-icon-theme
 
 
 nftables
-
-plymouth
