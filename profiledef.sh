@@ -26,8 +26,10 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/compile-schemas.sh"]="0:0:755"
+
+  ["/etc/skel/Desktop/bakery-installer.desktop"]="0:0:755"
     
-  ["/usr/bin/bakery-installer"]="0:0:755"
+  ["/usr/bin/bakery-os-installer"]="0:0:755"
   ["/usr/local/bin/bakery_os_patch_script.sh"]="0:0:755"
 
   ["/etc/issue"]="0:0:644"
@@ -37,7 +39,7 @@ file_permissions=(
 
   ["/usr/share/bakery/logo.txt"]="0:0:644"
 
-  ["/etc/sudoers.d/bakery"]="0:0:440"
+  ["/etc/sudoers.d/bakeryos"]="0:0:440"
 )
 
 

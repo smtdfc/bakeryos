@@ -1,2 +1,0 @@
-#!/bin/bash
-konsole --fullscreen --title "BakeryOS Installer" -e bash -c 'sudo dbus-run-session calamares -d; echo "Install crashed! Press Enter to close..."; read'
