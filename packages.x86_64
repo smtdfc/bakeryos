@@ -49,10 +49,7 @@ less
 lftp
 libfido2
 libusb-compat
-linux
-linux-atm
-linux-firmware
-linux-firmware-marvell
+
 livecd-sounds
 lsscsi
 lvm2
@@ -126,6 +123,12 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+
+linux-zen
+linux-zen-headers
+linux-firmware
+linux-firmware-marvell
+
 
 fastfetch
 
