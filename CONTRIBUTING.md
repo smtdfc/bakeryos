@@ -1,0 +1,3 @@
+Welcome to the Bakery OS kitchen! If you're interested in being a sous chef, remember: don't use salt instead of sugar, don't commit code without testing it first, and leave complete logs for the 'head chef' to review!
+
+
