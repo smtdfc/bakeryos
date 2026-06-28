@@ -1,2 +1,2 @@
 #!/bin/bash
-dbus-run-session calamares
+sudo dbus-run-session calamares

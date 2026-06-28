@@ -32,6 +32,7 @@ file_permissions=(
   ["/etc/issue"]="0:0:644"
   ["/etc/os-release"]="0:0:644"
   ["/etc/nftables.conf"]="0:0:644"
+  ["/usr/share/gnome-background-properties/bakery-os.xml"]="0:0:644"
 
 
   ["/usr/share/bakery/logo.txt"]="0:0:644"
