@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Bakery OS
-Description=BakeryOS Theme
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/bakery
-ScriptFile=/usr/share/plymouth/themes/bakery/bakery.script
