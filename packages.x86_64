@@ -2,7 +2,6 @@ alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
-b43-fwcutter
 base
 bcachefs-tools
 bind
@@ -13,7 +12,6 @@ btrfs-progs
 clonezilla
 cloud-init
 cryptsetup
-darkhttpd
 ddrescue
 dhcpcd
 diffutils
@@ -39,9 +37,8 @@ grub
 hdparm
 hyperv
 intel-ucode
-irssi
 iw
-iwd
+
 jfsutils
 kitty-terminfo
 ldns
@@ -53,7 +50,7 @@ libusb-compat
 livecd-sounds
 lsscsi
 lvm2
-lynx
+
 man-db
 man-pages
 mc
@@ -101,7 +98,7 @@ sof-firmware
 squashfs-tools
 sudo
 syslinux
-systemd-resolvconf
+
 tcpdump
 terminus-font
 testdisk
@@ -112,12 +109,11 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
-wpa_supplicant
+
 wvdial
 xdg-utils
 xfsprogs
@@ -152,7 +148,6 @@ gdm
 loupe
 decibels
 showtime
-epiphany
 snapshot
 extension-manager
 
@@ -204,5 +199,6 @@ papirus-icon-theme
 
 nftables
 plymouth
+chromium
 
-bakery-os-calamares-config
+bakeryos-calamares-config

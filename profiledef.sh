@@ -3,8 +3,8 @@
 
 iso_name="bakeryos"
 iso_label="BAKERY_OS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Bakery OS"
-iso_application="Bakery OS Live/Rescue DVD"
+iso_publisher="BakeryOS"
+iso_application="BakeryOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
@@ -27,15 +27,15 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/compile-schemas.sh"]="0:0:755"
     
-  ["/usr/bin/bakery-os-installer"]="0:0:755"
+  ["/usr/bin/bakeryos-installer"]="0:0:755"
 
   ["/etc/issue"]="0:0:644"
   ["/etc/os-release"]="0:0:644"
   ["/etc/nftables.conf"]="0:0:644"
-  ["/usr/share/gnome-background-properties/bakery-os.xml"]="0:0:644"
+  ["/usr/share/gnome-background-properties/bakeryos.xml"]="0:0:644"
 
 
-  ["/usr/share/bakery/logo.txt"]="0:0:644"
+  ["/usr/share/fastfetch/logo.txt"]="0:0:644"
 
   ["/etc/sudoers.d/bakeryos"]="0:0:440"
 )

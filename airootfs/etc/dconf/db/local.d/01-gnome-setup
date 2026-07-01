@@ -4,8 +4,3 @@ enabled-extensions=['blur-my-shell@aunetx', 'dash-to-panel@jderose9.github.com',
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 
-[org/gnome/desktop/interface]
-gtk-theme='Bakery-OS-Theme'
-
-[org/gnome/shell/extensions/user-theme]
-name='Bakery-OS-Theme'

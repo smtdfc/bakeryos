@@ -1,18 +1,33 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "/usr/share/bakery/logo.txt",
+    "source": "/usr/share/fastfetch/logo.txt",
     "type": "file",
     "width": 30,
   },
-  "modules": [
+ "modules": [
+    "title",
+    "separator",
     "os",
+    "host",
+    "board",
     "kernel",
     "uptime",
+    "packages",
     "shell",
+    "display",
+    "de",
+    "wm",
+    "terminal",
     "cpu",
+    "gpu",
     "memory",
+    "swap",
+    "disk",
+    "battery",
+    "poweradapter",
+    "localip",
     "break",
-    "colors",
+    "colors"
   ],
 }

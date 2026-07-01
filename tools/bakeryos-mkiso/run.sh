@@ -15,7 +15,7 @@ export LC_ALL="C.UTF-8"
 export SOURCE_DATE_EPOCH
 
 # Set application name from the script's file name
-app_name="Bakery OS ISO Builder"
+app_name="BakeryOS ISO Builder"
 
 # Define global variables. All of them will be overwritten later
 pkg_list=()
