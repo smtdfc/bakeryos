@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="bakeryos"
-iso_label="BAKERY_OS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_label="BAKERYOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="BakeryOS"
 iso_application="BakeryOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"

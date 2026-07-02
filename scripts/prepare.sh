@@ -2,7 +2,6 @@ source $(dirname "$(readlink -f "$0")")/base.sh
 
 export LANG=C
 sudo pacman -Syu
-sudo pacman -S dart-sass meson ninja
 
 mkdir -p $DATA_DIR
 mkdir -p $SNAPSHOT_TARGET_DIR

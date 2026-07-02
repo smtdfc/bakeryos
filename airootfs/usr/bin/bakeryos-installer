@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo dbus-run-session calamares
+LOG_FILE="$HOME/calamares-bakeryos.log"
+pkexec calamares -d > "$LOG_FILE" 2>&1
