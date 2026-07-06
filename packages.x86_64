@@ -196,6 +196,12 @@ polkit
 
 papirus-icon-theme
 
+gnu-free-fonts
+ttf-bitstream-vera
+inter-font
+ttf-roboto
+ttf-liberation
+ttf-dejavu
 
 nftables
 plymouth
