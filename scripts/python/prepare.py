@@ -15,7 +15,8 @@ class CaseConfigParser(configparser.ConfigParser):
 def update_system() -> None:
     print("Updating .... ")
     run_command_and_stream(["sudo", "pacman", "-Syu"])
-
+    run_command_and_stream(["sudo", "pacman", "-S", "--needed", "base-devel"])
+    run_command_and_stream(["sudo", "pacman", "-S", "--needed", "squashfs-tools", "dosfstools", "mtools", "arch-install-scripts", "xorriso"])
 def ensure_files() -> None:
     print("Creating files and dirs .... ")
     os.makedirs(data_dir, exist_ok=True)
