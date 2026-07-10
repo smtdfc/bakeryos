@@ -33,7 +33,6 @@ gnome_extensions:list[dict[str, str]] = [
 pacman_config_file = project_dir / "pacman.conf"
 package_snapshots = [
     "calamares",
-    "papirus-icon-theme-git"
 ]
 
 bakeryos_repository = "https://repo.bakeryos.smtdfc.space/$arch"
