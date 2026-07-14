@@ -1,6 +1,104 @@
 [org/gnome/shell]
-enabled-extensions=['blur-my-shell@aunetx', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com', 'ding@rastersoft.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['blur-my-shell@aunetx', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com', 'ding@rastersoft.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'arcmenu@arcmenu.com']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 
+[org/gnome/shell/extensions/blur-my-shell]
+rounded-blur-found=false
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
+pipeline='pipeline_default'
+static-blur=true
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.56000000000000005
+override-background=false
+pipeline='pipeline_default_rounded'
+sigma=44
+static-blur=false
+style-dash-to-dock=0
+unblur-in-overview=false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+corner-radius=0
+pipeline='pipeline_default'
+sigma=30
+static-blur=true
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover=false
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=8
+appicon-padding=10
+appicon-style='NORMAL'
+dot-position='BOTTOM'
+dot-style-focused='SEGMENTED'
+dot-style-unfocused='DASHES'
+extension-version=73
+group-apps=true
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=false
+isolate-workspaces=false
+overview-click-to-exit=false
+panel-anchors='{"0":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{}'
+panel-positions='{"0":"BOTTOM"}'
+panel-sizes='{"0":48}'
+prefs-opened=false
+progress-show-count=true
+taskbar-locked=true
+trans-bg-color='#ffffff'
+trans-dynamic-behavior='MAXIMIZED_WINDOWS'
+trans-gradient-bottom-color='#33d17a'
+trans-gradient-bottom-opacity=0.5
+trans-gradient-top-color='#e01b24'
+trans-gradient-top-opacity=1.0
+trans-panel-opacity=0.0
+trans-use-border=false
+trans-use-custom-bg=false
+trans-use-custom-gradient=false
+trans-use-custom-opacity=true
+trans-use-dynamic-opacity=true
+window-preview-title-position='TOP'
+
+
+[org/gnome/shell/extensions/arcmenu]
+dash-to-panel-standalone=true
+menu-button-icon='resource:///org/gnome/shell/extensions/arcmenu/icons/scalable/actions/icon-app-launcher-symbolic.svg'
+menu-layout='AZ'
+multi-monitor=true
+override-menu-theme=false
+pinned-apps=[{'id': 'org.gnome.Nautilus.desktop'}, {'id': 'org.gnome.Console.desktop'}]
+pop-folders-data={'Library Home': 'Library Home', 'System': 'System', 'Utilities': 'Utilities'}
+position-in-panel='Left'
+power-display-style='Menu'
+power-options=[(0, true), (1, true), (2, true), (3, true), (4, true), (5, true), (6, true), (7, true)]
+prefs-visible-page=0
+search-entry-border-radius=(true, 25)
+update-notifier-project-version=73

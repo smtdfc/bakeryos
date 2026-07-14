@@ -24,3 +24,5 @@ materia-theme
 gnome-extensions
 data
 __pycache__
+
+/gnome-shell/extensions/

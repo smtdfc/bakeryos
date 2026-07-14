@@ -9,24 +9,29 @@ build_profile = project_dir / "profiledef.sh"
 data_dir = project_dir / "data"
 snapshot_dir = project_dir / "pkg-snapshots"
 snapshot_target_dir = data_dir / "pkgs"
-local_repo_dir= data_dir / "local-repo"
-local_repo_db_file=local_repo_dir/"custom.db.tar.gz"
-gnome_version=50
+local_repo_dir = data_dir / "local-repo"
+local_repo_db_file = local_repo_dir/"custom.db.tar.gz"
+gnome_version = 50
 gnome_extension_dir = data_dir / "gnome-extensions"
-gnome_extension_install_dir = project_dir / "airootfs" / "usr" / "share" / "gnome-shell" / "extensions"
-gnome_extensions:list[dict[str, str]] = [
+gnome_extension_install_dir = project_dir / "airootfs" / \
+    "usr" / "share" / "gnome-shell" / "extensions"
+gnome_extensions: list[dict[str, str]] = [
     {
         "id": "dash-to-panel@jderose9.github.com",
-        "version":"73",
+        "version": "73",
     },
     {
-        "id":"blur-my-shell@aunetx",
-        "version":"71",
+        "id": "blur-my-shell@aunetx",
+        "version": "71",
     },
     {
         "id": "tilingshell@ferrarodomenico.com",
-        "version":"76",
+        "version": "76",
     },
+    {
+        "id": "arcmenu@arcmenu.com",
+        "version": "71"
+    }
 ]
 
 
@@ -36,7 +41,4 @@ package_snapshots = [
 ]
 
 bakeryos_repository = "https://repo.bakeryos.smtdfc.space/$arch"
-bakeryos_mkiso_tool = project_dir /"tools"/"bakeryos-mkiso"/"run.sh"
-
-
-
+bakeryos_mkiso_tool = project_dir / "tools"/"bakeryos-mkiso"/"run.sh"

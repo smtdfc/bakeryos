@@ -126,7 +126,7 @@ linux-firmware
 linux-firmware-marvell
 
 
-fastfetch
+
 
 gnome-shell
 gnome-session
@@ -135,16 +135,15 @@ mutter
 gnome-control-center
 nautilus
 gnome-console
+gnome-menus
 gnome-keyring
 gnome-tweaks
 gnome-shell-extensions
 gnome-calendar
 gnome-text-editor
 gnome-characters
-gnome-disk-utility
-gnome-shell-extension-desktop-icons-ng
-
 gdm
+
 loupe
 decibels
 showtime
@@ -206,6 +205,7 @@ ttf-dejavu
 nftables
 plymouth
 chromium
+fastfetch
 
 bakeryos-calamares-config
 bakeryos-preset
