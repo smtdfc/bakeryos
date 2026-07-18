@@ -8,7 +8,7 @@ build:
     - pacman -Sy --noconfirm
     - pacman -S --noconfirm archiso python base-devel sudo
     - useradd -m builduser
-    - printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers
+    - 'echo "builduser ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/builduser'
     - chown -R builduser:builduser $CI_PROJECT_DIR
   script:
     - su - builduser -c "cd $CI_PROJECT_DIR && python ./scripts/python/main.py prepare"
