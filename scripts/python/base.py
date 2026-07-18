@@ -36,9 +36,7 @@ gnome_extensions: list[dict[str, str]] = [
 
 
 pacman_config_file = project_dir / "pacman.conf"
-package_snapshots = [
-    "calamares",
-]
+package_snapshots = []
 
 bakeryos_repository = "https://repo.bakeryos.smtdfc.space/$arch"
 bakeryos_mkiso_tool = project_dir / "tools"/"bakeryos-mkiso"/"run.sh"

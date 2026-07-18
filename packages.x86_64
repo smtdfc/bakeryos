@@ -162,7 +162,6 @@ xdg-desktop-portal-gnome
 pipewire
 wireplumber
 
-calamares
 squashfs-tools
 parted
 dosfstools
@@ -207,5 +206,6 @@ plymouth
 chromium
 fastfetch
 
+bakeryos-calamares
 bakeryos-calamares-config
 bakeryos-preset
