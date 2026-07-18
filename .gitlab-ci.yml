@@ -13,6 +13,5 @@ build:
   script:
     - su - builduser -c "cd $CI_PROJECT_DIR && python ./scripts/python/main.py prepare"
     - su - builduser -c "cd $CI_PROJECT_DIR && python ./scripts/python/main.py build"
-  artifacts:
-    paths:
-      - "./out/*.iso"
+    - curl --progress-bar --upload-file ./out/*.iso https://transfer.sh/BakeryOS_Final.iso > f.txt
+    - cat f.txt
