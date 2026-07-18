@@ -23,6 +23,7 @@ node_modules
 materia-theme
 gnome-extensions
 data
+build_time
 __pycache__
 
 /gnome-shell/extensions/

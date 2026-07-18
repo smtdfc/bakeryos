@@ -1,8 +1,9 @@
 import subprocess
 import sys
+import os
 
 
-def run_command_and_stream(command: str | list[str], cwd:str | None = None) -> int:
+def run_command_and_stream(command: str | list[str], cwd: str | None = None) -> int:
     print("--------------------------------------------------")
 
     try:
@@ -13,7 +14,8 @@ def run_command_and_stream(command: str | list[str], cwd:str | None = None) -> i
             command,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            text=True, # Automatically decodes bytes to string (no need for .decode())
+            # Automatically decodes bytes to string (no need for .decode())
+            text=True,
             shell=True if isinstance(command, str) else False,
             cwd=cwd
         )
@@ -28,3 +30,10 @@ def run_command_and_stream(command: str | list[str], cwd:str | None = None) -> i
         print(f"An error occurred while executing command: {e}")
         return -1
 
+
+def directory_has_files(dir_path):
+    try:
+        with os.scandir(dir_path) as it:
+            return any(it)
+    except FileNotFoundError:
+        return False

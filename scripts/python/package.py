@@ -4,6 +4,16 @@ from pathlib import Path
 from base import *
 from utils import run_command_and_stream
 
+
+def download_all_core_packages() -> None:
+    with open(packagex64_file, "r") as f:
+        packages = [line.strip() for line in f if line.strip()]
+
+    cmd = ["sudo", "pacman", "-Sy", "--noconfirm",
+           "--downloadonly", "--cachedir", package_cache_dir, "--config", pacman_config_file] + packages
+    run_command_and_stream(cmd)
+
+
 def extract_all_snapshot() -> None:
     for package in package_snapshots:
         print("-----------------------------------")
@@ -34,6 +44,7 @@ def extract_all_snapshot() -> None:
 
         except Exception as e:
             print(f"Failed: {package}: {e}")
+
 
 def build_all_pkg() -> None:
     local_repo_dir.mkdir(parents=True, exist_ok=True)

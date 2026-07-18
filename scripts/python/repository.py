@@ -10,3 +10,13 @@ def add_local_repo() -> None:
         )
     else:
         print("No packages found.")
+
+
+def add_cache_repo() -> None:
+    pkg_files = list(package_cache_dir.glob("*.pkg.tar.zst"))
+    if pkg_files:
+        run_command_and_stream(
+            ["repo-add", str(package_cache_db), *map(str, pkg_files)]
+        )
+    else:
+        print("No packages found.")
