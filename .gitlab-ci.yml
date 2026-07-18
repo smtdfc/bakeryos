@@ -1,0 +1,25 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: archlinux:latest
+  cache:
+    key: arch-packages
+    paths:
+      - /var/cache/pacman/pkg/
+  before_script:
+    - pacman -Sy --noconfirm
+    - pacman -S --noconfirm archiso python
+    - sed -i 's/#Server/Server/g' /etc/pacman.d/mirrorlist
+  script:
+    - python ./scripts/python/main.py prepare
+    - python ./scripts/python/main.py build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - "./out/*.iso"
+  variables:
+    GIT_STRATEGY: fetch
+    GIT_CLEAN_FLAGS: -ffdx
+    GIT_DEPTH: 1
