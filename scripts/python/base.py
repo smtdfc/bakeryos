@@ -37,6 +37,10 @@ gnome_extensions: list[dict[str, str]] = [
     {
         "id": "arcmenu@arcmenu.com",
         "version": "71"
+    },
+    {
+        "id": "gtk4-ding@smedius.gitlab.com",
+        "version": "139"
     }
 ]
 
